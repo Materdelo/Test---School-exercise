@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Form</title>
+</head>
+<body>
+    <form action="redirect.php" method="POST">
+        <label for="id">Identyfikator:</label>
+        <input type="text" id="id" name="id" required><br><br>
+        
+        <label for="lesson">Lekcja:</label>
+        <input type="number" id="lesson" name="lesson" required><br><br>
+        
+        <label for="class">Klasa:</label>
+        <input type="text" id="class" name="class" required><br><br>
+
+        <input type="submit" value="Przekieruj">
+    </form>
+</body>
+</html>

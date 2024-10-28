@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Testy QUnit</title>
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.22.0.css">
+</head>
+<body>    
+    <div id="workspaceNav">
+      <a href="#w1" data-sohbtn="workspace" data-sohgroup="workspace" data-sohno="1">1</a>
+      <a href="#w2" data-sohbtn="workspace" data-sohgroup="workspace" data-sohno="2">2</a>
+      <a href="#wa" data-sohbtn="workspace" data-sohgroup="workspace" data-sohno="new" onclick="createWrkspc()">+</a>
+    </div>
+    <section id="content">
+      <section data-sohcanv="workspace" data-sohgroup="workspace" data-sohno="1">Body #1</section>
+      <section data-sohcanv="workspace" data-sohgroup="workspace" data-sohno="2">Body #2</section>
+    </section>
+
+    <div id="qunit"></div>
+    <div id="qunit-fixture"></div>
+
+    <script src="https://code.jquery.com/qunit/qunit-2.22.0.js"></script>
+    <script src="./src/workspaces.js"></script>
+    <script src="test/testWorkspace.js"></script>
+</body>
+</html>
